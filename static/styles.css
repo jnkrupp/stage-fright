@@ -3,13 +3,38 @@ body {
     text-align: center;
 }
 
-#checky{
-   text-align: left; /* reset text-align for IE */
-   margin: 0 auto; /* Center in other browsers */
-   width: 400px;
+#checky {
+    text-align: left;
+    /* reset text-align for IE */
+    margin: 0 auto;
+    /* Center in other browsers */
+    width: 400px;
 }
 
-#bottomtip{
-   font-family: 'Jura', sans-serif;
-   text-align: center;
+#bottomtip {
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+}
+
+#centercontainer {
+    float: left;
+    padding: 0 10% 0 10% 0;
+}
+
+.center {
+    text-align: center;
+}
+
+body{
+    font-family: 'Noto Serif SC', serif;
+/*font-family: 'Aleo', serif;*/
+}
+
+div.a{
+    font-size: large;
+}
+
+#grad{
+    height:2000px
+    background-image:linear-gradient(black,white);
 }

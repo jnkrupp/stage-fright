@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   <link rel="stylesheet" href="../static/styles.css">
+    <!--    font link-->
+    <link href="https://fonts.googleapis.com/css?family=Aleo|Noto+Serif+SC" rel="stylesheet">
+    
+    <title>Stage Fright</title>
+</head>
+
+<body style="background-color: black">
+<!--    header -->
+<!--    <div id="grad"></div>-->
+    <h1 id="center" style="color:aliceblue">Try out our voice analyzer!</h1>
+    
+
+
+
+
+<form action="/upload" method="post" enctype="multipart/form-data" >
+  <span class="btn btn-default btn-file">
+     Input audio tile <input type="file" name="audio" id="imgreceipt" onchange="loadFile(event)">
+  </span>
+
+  <input type="submit" value="Upload your audio file" class="btn btn-primary">
+</form>
+
+
+
+
+</body>
+</html>
