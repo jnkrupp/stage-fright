@@ -38,12 +38,14 @@ speechToText = SpeechToTextV1(
 def hello_world():
     return render_template('index.html')
 
+@app.route('/page2')
+def page2():
+    return render_template("page2.html")
 
-@app.route('/record')
-def record():
-    return render_template("record.html")
 
-
+@app.route('/try-it')
+def try_it():
+    return render_template("try-it.html")
 
 @app.route('/upload', methods=['POST'])
 def upload_photo():
@@ -71,4 +73,6 @@ def upload_photo():
     clarity = speech.getSpeechClarity()
     transcript = speech.getSpeechTranscript()
 
-    return render_template('play.html', graph_url='data:image/png;base64,{}'.format(graph_url), hesitations=hesitations, clarity=clarity*100, transcript=transcript)
+    return render_template('stat.html', graph_url='data:image/png;base64,{}'.format(graph_url), hesitations=hesitations, clarity=clarity*100, transcript=transcript)
+
+

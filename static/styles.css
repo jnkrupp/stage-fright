@@ -18,7 +18,7 @@ body {
 
 #centercontainer {
     float: left;
-    padding: 0 10% 0 10% 0;
+    padding: 0 10% 0 10%;
 }
 
 .center {
@@ -35,6 +35,6 @@ div.a{
 }
 
 #grad{
-    height:2000px
+    height:2000px;
     background-image:linear-gradient(black,white);
 }

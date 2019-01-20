@@ -10,25 +10,14 @@
     <!-- header -->
     <h1 id="center" style="color:aliceblue">Voice Analyzing Report</h1>
     <br>
+    <img src="{{ graph_url }}">
     <hr>
     <!-- clarity -->
-    <h2 id="center" style="color:aliceblue">Clarity</h2>
+    <h2 id="center" style="color:aliceblue">Clarity: {{ clarity }}%</h2>
     <!--    Hesitation-->
-    <h2 id="center" style="color:aliceblue">Hesitations</h2>
+    <h2 id="center" style="color:aliceblue">Hesitations: {{ hesitations }}</h2>
     <!--    Transcription-->
-    <h2 id="center" style="color:aliceblue">Transcription</h2>
-
-    <!--
-<form action="/upload" method="post" enctype="multipart/form-data" >
-  <span class="btn btn-default btn-file">
-     Add a receipt <input type="file" name="audio" id="imgreceipt" onchange="loadFile(event)">
-  </span>
-
-  <input type="submit" value="Upload your audio file" class="btn btn-primary">
-</form>
-
--->
-
+    <h2 id="center" style="color:aliceblue">Transcript: {{ transcript }}</h2>
 
 
 </body>

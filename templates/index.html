@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <!--    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">-->
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <!--<link rel="stylesheet" href="../static/styles.css">-->
     <!--    font link-->
     <link href="https://fonts.googleapis.com/css?family=Aleo|Noto+Serif+SC" rel="stylesheet">
 
@@ -18,13 +18,14 @@
         <br>
 
         <!--  image #1    -->
-        <img src="front_page.png" width=100%>
+        <img src="{{url_for('static', filename='front_page.png')}}" width=100%>
 
         <br>
         <br>
         <!--        2 buttons -->
         <!--        1. about (summary) along with the 4th picture -->
-        <button type="button"> About </button>
+        <a href="\page2"><button type="button"> About </button></a>
+        <a href="\try-it"><button type="button"> Try it </button></a>
         <!--        2. try it out -->
 
         <br>
@@ -38,7 +39,7 @@
         <br>
 
         <!--        image #2 -->
-        <img src="image-2.png" width=100%>
+        <img src="{{url_for('static', filename='image-2.png')}}" width=100%>
 
         <!--        statement #2-->
         <div id="center" style="color:aliceblue" class="a">However, after going through this simulator, you will no longer be afraid of speaking in front of anything, anymore.
@@ -46,7 +47,7 @@
 
 
         <!--        image #3 -->
-        <img src="image-3.png" width=100%>
+        <img src="{{url_for('static', filename='image-3.png')}}" width=100%>
 
         <!--        statement #3-->
         <div id="center" style="color:aliceblue" class="a"> Because unlike other public speaking apps, our app emphasizes overcoming the fear of being in the spotlight. Literally.
@@ -55,16 +56,6 @@
         <br>
         <br>
 
-        <!--
-
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <span class="btn btn-default btn-file">
-                Add an audio file <input type="file" name="audio" id="imgreceipt" onchange="loadFile(event)">
-            </span>
-
-            <input type="submit" value="Upload your audio file" class="btn btn-primary">
-        </form>
--->
 
 
 
