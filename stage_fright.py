@@ -12,6 +12,7 @@ Usage: stage_fright.py out_file api_key_file
 API_KEY = json.loads(open(sys.argv[2], 'r').read())['apiKey']
 URL = 'https://stream.watsonplatform.net/speech-to-text/api'
 
+# Credit here: https://cloud.ibm.com/apidocs/speech-to-text?language=python
 speechToText = SpeechToTextV1(
     iam_apikey=API_KEY,
     url=URL
