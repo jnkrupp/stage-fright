@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <meta charset="UTF-8">
+    <title>Stage Fright</title>
+</head>
+<body>
+
+
+
+
+<form action="/upload" method="post" enctype="multipart/form-data" >
+  <span class="btn btn-default btn-file">
+     Add a receipt <input type="file" name="audio" id="imgreceipt" onchange="loadFile(event)">
+  </span>
+
+  <input type="submit" value="Upload your audio file" class="btn btn-primary">
+</form>
+
+
+
+
+</body>
+</html>

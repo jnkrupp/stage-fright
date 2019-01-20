@@ -1,0 +1,15 @@
+body {
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+}
+
+#checky{
+   text-align: left; /* reset text-align for IE */
+   margin: 0 auto; /* Center in other browsers */
+   width: 400px;
+}
+
+#bottomtip{
+   font-family: 'Jura', sans-serif;
+   text-align: center;
+}
