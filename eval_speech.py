@@ -9,10 +9,19 @@ class Speech:
                                    max_alternatives=1)
 
     def getSpeechTranscript(self):
-        return self.response.get_result()['results'][0]['alternatives'][0]['transcript'].replace('%HESITATION', '...')
+        try:
+            return self.response.get_result()['results'][0]['alternatives'][0]['transcript'].replace('%HESITATION', '...')
+        except:
+            return "(A transcription couldn't be deciphered.)"
 
     def getHesitations(self):
-        return self.response.get_result()['results'][0]['alternatives'][0]['transcript'].count('%HESITATION')
+        try:
+            return self.response.get_result()['results'][0]['alternatives'][0]['transcript'].count('%HESITATION')
+        except:
+            return 0
 
     def getSpeechClarity(self):
-        return self.response.get_result()['results'][0]['alternatives'][0]['confidence']
+        try:
+            return self.response.get_result()['results'][0]['alternatives'][0]['confidence']
+        except:
+            return 0
