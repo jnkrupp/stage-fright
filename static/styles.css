@@ -38,3 +38,21 @@ div.a{
     height:2000px;
     background-image:linear-gradient(black,white);
 }
+
+.btn{
+   position: relative;
+   background-color: whitesmoke;
+   border: none;
+   color: black;
+   padding:16px 32px;
+   text-align: center;
+   font-size: 16px;
+   margin:0 auto;
+   opacity:1;
+   transition:0.3s;
+   border-radius: 12px;
+    font-family: 'Noto Serif SC', serif;
+
+}
+
+.btn:hover{opacity:0.6}
