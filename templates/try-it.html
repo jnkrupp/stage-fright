@@ -15,17 +15,31 @@
     <h1 id="center" style="color:aliceblue">Try out our voice analyzer!</h1>
     
 
-<br><br>
+    <br><br>
 
 
-<form action="/upload" method="post" enctype="multipart/form-data" >
-  <span class="btn btn-default btn-file" >
-     Input audio file <input type="file" name="audio" id="imgreceipt" onchange="loadFile(event)">
-  </span><br><br><br>
-  <input type="submit" value="Upload your audio file" class="btn btn-primary">
-</form>
+    <form action="/upload" method="post" enctype="multipart/form-data" >
+      <span class="btn btn-default btn-file" >
+         Input audio file <input type="file" name="audio" id="imgreceipt" onchange="loadFile(event)">
+      </span><br><br><br>
+      <input type="submit" style="font-family:'Noto Serif SC', serif"value="Upload your audio file" class="btn btn-primary" onClick="check()">
+    </form>
 
-<br><br>
+    <br><br>
+
+    <div id="processing" style="color:aliceblue"></div>
+    <br>
+    <div id="tip" style="color:aliceblue"></div>
+    <br><br>
+
+    <script>
+        function check() {
+            var k = "processing";
+            document.getElementById(k).textContent = "Your file is being processed.";
+            var k = "tip";
+            document.getElementById(k).textContent = "Tip: Practice makes perfect";
+        }
+    </script>
 
 
 </body>
